@@ -374,9 +374,12 @@
    }
 
    .cards__image {
-    width: 270px;
-    height: 270px;
-    margin: 111px 0 -25px -25px;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    filter: drop-shadow(32px 32px 64px rgba(86, 204, 242, 0.05));
+    object-fit: cover;
+    margin: 160px 0 64px 0;
     
   }
 
