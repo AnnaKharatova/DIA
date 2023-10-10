@@ -22,11 +22,11 @@
         <li><a href="#" class="nav__link">Contact Us</a></li>
       </ul>
       <div class="nav__last-link"><a href="#" class="nav__link">Hire us</a></div>
-      <div class="header__burger-menu">
+      <div class="header__burger-menu" onclick="openPopup()">
         <hr class="header__element"></hr>
         <hr class="header__element"></hr>
         <hr class="header__element"></hr>
-    </div>
+      </div>
     </nav>
     <h1 class="header__title">Global digital agency</h1>
     <h2 class="header__subtitle">By the same illusion which lifts the horizon of the sea to the level of the spectator
@@ -41,9 +41,9 @@
       <h3 class="gallery__title">Intro</h3>
       <p class="gallery__text">By the same illusion which lifts the horizon.</p>
       <div class="social">
-        <a class="social__logo" href="#">Facebook</a>
-        <a class="social__logo" href="#">Twitter</a>
-        <a class="social__logo" href="#">Vkontakte</a>
+        <a class="social__logo" href="#" target="_blank">Facebook</a>
+        <a class="social__logo" href="#" target="_blank">Twitter</a>
+        <a class="social__logo" href="#" target="_blank">Vkontakte</a>
       </div>
     </div>
   </header>
@@ -251,5 +251,29 @@
     </ul>
     </div>
   </footer>
-  
+
+  <section class='popup-menu' id="popup-menu">
+    <div class="popup-menu__container">
+      <div class="popup-menu__body">
+        <button onclick='closePopup()' class="popup-menu__close-button" type="button"
+          id="popup-menu__close-button"></button>
+        <ul class="popup-menu__nav">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">About Us</a></li>
+          <li><a href="#" class="nav__link">Services</a></li>
+          <li><a href="#" class="nav__link">Work</a></li>
+          <li><a href="#" class="nav__link">Contact Us</a></li>
+        </ul>
+        <ul class='popup-menu__social'>
+          <a class="social__logo" href="#" target="_blank">Facebook</a>
+          <a class="social__logo" href="#" target="_blank">Twitter</a>
+          <a class="social__logo" href="#" target="_blank">Vkontakte</a>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="./scripts/index.js"></script>
 </body>
+
+</html>
